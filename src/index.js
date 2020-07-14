@@ -19,13 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
         task_text.value = ""
         const newTask = document.createElement('li')
         newTask.innerHTML = textValue
+        const select = document.querySelector('select')
+        newTask.className += select.value       
         taskList.append(newTask);
     })
 
+
+
 });
 
-// delete button
-// √make a button
-// √add it somewhere
-// add an event listenere
-// delete the list
+// - A priority value selected from a dropdown that is used to determine the color of the text in the list (e.g. red for high priority, yellow for medium, green for low)
+
+
+// create priority class in css
+// create dropdown 
+// populate dropdown with priorities
+// event listenier on select 
+// assign priority class to a task
